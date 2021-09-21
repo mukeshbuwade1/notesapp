@@ -1,24 +1,56 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import Navbar from "./component/Navbar";
+import Footer from "./component/Footer";
+import AddCard from "./component/AddCard";
+import CardList from "./component/CardList";
 
-function App() {
+
+const App=()=> {
+
+  const [newVal, setNewVal] = useState([]);
+
+  const myfun=(val)=>{
+    setNewVal((pre)=>{
+          return [...pre, val];
+
+        });
+    console.log(val);
+    console.log(newVal);
+  }
+
+  const ItemDel=(id)=>{
+    setNewVal((oldval)=>{
+      return oldval.filter((a,i)=>{
+        return i !== id;
+        
+      })
+      
+    })
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+
+
+    <>
+      <Navbar />
+      <AddCard fun={myfun} />
+      <div className="mainbox">
+     { 
+           newVal.map((data, index)=>{
+             return <CardList
+               key={index}
+               id={index}
+               title={data.title}
+               content={data.content} 
+               ItemDel={ItemDel}
+               />
+           })
+     
+           }
+       </div>
+      <Footer />
+    </>
+    
   );
 }
 
