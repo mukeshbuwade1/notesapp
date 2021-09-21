@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/notesapp/static/css/main.4a5812d5.chunk.css",
+    "main.js": "/notesapp/static/js/main.7bd28f19.chunk.js",
+    "main.js.map": "/notesapp/static/js/main.7bd28f19.chunk.js.map",
+    "runtime-main.js": "/notesapp/static/js/runtime-main.09eacdd7.js",
+    "runtime-main.js.map": "/notesapp/static/js/runtime-main.09eacdd7.js.map",
+    "static/js/2.235433e7.chunk.js": "/notesapp/static/js/2.235433e7.chunk.js",
+    "static/js/2.235433e7.chunk.js.map": "/notesapp/static/js/2.235433e7.chunk.js.map",
+    "index.html": "/notesapp/index.html",
+    "static/css/main.4a5812d5.chunk.css.map": "/notesapp/static/css/main.4a5812d5.chunk.css.map",
+    "static/js/2.235433e7.chunk.js.LICENSE.txt": "/notesapp/static/js/2.235433e7.chunk.js.LICENSE.txt",
+    "static/media/Capturef-removebg-preview.3388d573.png": "/notesapp/static/media/Capturef-removebg-preview.3388d573.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.09eacdd7.js",
+    "static/js/2.235433e7.chunk.js",
+    "static/css/main.4a5812d5.chunk.css",
+    "static/js/main.7bd28f19.chunk.js"
+  ]
+}
